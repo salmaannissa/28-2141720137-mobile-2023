@@ -25,6 +25,7 @@ Dalam penggunaan bahasa pemrograman Dart, untuk melakukan operasi hitung dapat m
 ![Screenshoot looping](docs/operasihitung.PNG)
 
 Sedangkan untuk melakukan penambahan dan pengurangan nilai menggunakan increment dan decrement maka dapat memanfaatkan kode program seperti berikut :
+
 ![Screenshoot looping](docs/incrementdecrement.PNG)
 
 Dalam menentukan nilai pengujian dalam hubungan antara dua variabel maka dapat menggunakan kode program seperti berikut :
