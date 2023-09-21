@@ -5,10 +5,10 @@
 ## **PRAKTIKUM 1**
 
 **Langkah 1** <br />
-![img](docs/code_11.PNG)
+![img](docs/code_11.png)
 
 **Langkah 2**<br />
-![img](docs/code_12.PNG)
+![img](docs/code_12.png)
 
 Pertama, program akan mencetak angka 3 yang berasal dari list.length = 3. Kedua, program akan mencetak angka 2 yang berasal dari nilai list berindeks 1 sebesar 2. Ketiga, program mencetak list[1] yang sebelumnya telah dirubah. Semula nilainya adalah 2, namun setelah dirubah nilainya menjadi 1. Sehingga program mencetak 3, 2, 1 secara berurutan.
 
