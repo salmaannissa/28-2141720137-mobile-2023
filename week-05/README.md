@@ -59,6 +59,8 @@
 ### **Langkah 12 :**
 - Memodifikasi README.md sehingga akan tampil sebagai berikut : </br>
 ![img](docs/2_12a.PNG)
+- Tampilan program saat menggunakan device HP : </br>
+![img](docs/poco/P2_hasil.jpg)
 
 ## **<b>PRAKTIKUM 3 </b>**
 
@@ -67,6 +69,8 @@
 ![img](docs/3_1.PNG)
 - Hasil Run Emulator untuk Text Widget</br>
 ![img](docs/3_1hasil.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P3_textwg.jpg)
 
 ### **Langkah 2 : Image Widget**
 - Kode Program Image Widget</br>
@@ -75,6 +79,8 @@
 ![img](docs/3_2a.PNG)
 - Hasil Run Emulator untuk Image Widget</br>
 ![img](docs/3_2b.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P3_imgwg.jpg)
 
 ## **<b>PRAKTIKUM 4 </b>**
 
@@ -85,6 +91,8 @@
 ![img](docs/4_1a_main.PNG)
 - Hasil Run Kode Program </br>
 ![img](docs/4_1b_hasil.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P4_cupertino.jpg)
 
 ### **Langkah 2 : Floating Action Button**
 - Kode Program Floating Action Button pada file **fab_widget.dart**</br>
@@ -93,6 +101,8 @@
 ![img](docs/4_2a_main.PNG)
 - Hasil Run Kode Program</br>
 ![img](docs/4_2b_hasil.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P4_fab.jpg)
 
 ### **Langkah 3 : Scaffold Widget**
 - Kode Program Scaffold Widget :</br>
@@ -100,6 +110,8 @@
 ![img](docs/4_3b.PNG)
 - Hasil Run : </br>
 ![img](docs/4_3c_hasil.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P4_scaffold.jpg)
 
 ### **Langkah 4 : Dialog Widget**
 - Kode Program Dialog Widget</br>
@@ -108,20 +120,25 @@
 - Hasil Run Kode Program : </br>
 ![img](docs/4_4c_hasil.PNG) </br>
 Program akan tampil seperti berikut jika widget diklik : </br>
-![img](docs/4_4c_hasilklik.PNG) 
-
+![img](docs/4_4c_hasilklik.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P4_dialog.jpg)
 
 ### **Langkah 5 : Input and Selection Widget**
 - Kode Program Input and Selection Widget</br>
 ![img](docs/4_5.PNG)
 - Hasil Run </br>
 ![img](docs/4_5_hasil.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/P4_inputselect.jpg)
 
 ### **Langkah 6 : Date and Time Pickers**
 - Kode Program Date and Time Pickers</br>
 ![img](docs/4_6.PNG)
 - Hasil Run </br>
 ![img](docs/4_6a.PNG)
+- Hasil run pada *smartphone* pengguna </br>
+![img](docs/poco/p4_date.jpg)
 
 ## **<b> Tugas Praktikum </b>**
 
@@ -138,6 +155,8 @@ Program akan tampil seperti berikut jika widget diklik : </br>
             ![img](docs/tugas_2_scaffoldhp2.PNG)
         - Hasil Run </br>
             ![img](docs/hasil_tugas_scaffold.PNG)
+        - Hasil Run dengan smartphone : </br>
+            ![img](docs/poco/P4_scaffold.jpg)
     - **Dialog Widget** </br>
         - Kode Program </br>
             - main.dart </br>
@@ -149,6 +168,8 @@ Program akan tampil seperti berikut jika widget diklik : </br>
             ![img](docs/dialog_mylayout_2.PNG)
         - Hasil Run akan memunculkan pop up sebagai berikut jika tombol dipencet</br>
             ![img](docs/hasil_dialog.PNG)
+        - Hasil Run dengan smartphone : </br>
+            ![img](docs/poco/P4_dialog.jpg)
     - **Input dan Selection Widget**
         - Kode Program </br>
             - main.dart </br>
@@ -157,6 +178,8 @@ Program akan tampil seperti berikut jika widget diklik : </br>
             ![img](docs/inputselect_myapp.PNG)
         - Hasil Run </br>
             ![img](docs/hasil_inputselect.PNG)
+        - Hasil Run dengan smartphone : </br>
+            ![img](docs/poco/P4_inputselect.jpg)
     - **Data and Time Pickers** </br>
         - Kode Program </br>
             - main.dart </br>
@@ -167,11 +190,15 @@ Program akan tampil seperti berikut jika widget diklik : </br>
             ![img](docs/homepage_datepicker.PNG)
             ![img](docs/homepage_datepicker_2.PNG)
         - Hasil Run </br>
-        ![img](docs/hasil_datepicker.PNG)
+            ![img](docs/hasil_datepicker.PNG)
+        - Hasil Run dengan smartphone : </br>
+            ![img](docs/poco/p4_date.jpg)
         
 3. Menyelesaikan Codelabs: Your first Flutter app </br>
-    - Menambahkan tombol </br>
-    ![img](docs/button_hasil.PNG)
-    - Menambahkan kartu </br>
-    ![img](docs/addcard_hasil.PNG)
+    - Menambahkan tombol & Memperindah tampil Aplikasi</br>
+    ![img](docs/poco/codelab_1.jpg)
+    - Menambahkan fungsi </br>
+    ![img](docs/poco/codelab_2.jpg)
+    - Menambahkan kolom dan hasil akhir </br>
+    ![img](docs/poco/codelab_3.jpg)
 
