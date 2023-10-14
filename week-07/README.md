@@ -72,9 +72,9 @@ Melakukan pencarian gambar pada internet dan membuat folder images di root proje
     ![image](docs/tp2_hasil_min.PNG)
 6. Melakukan modifikasi pada file dart widget dengan menambahkan mainAxisAlignment: MainAxisAlignment.end sehingga akan tampil seperti berikut : </br>
     ![image](docs/axisalignt_end.PNG)
-7. Melakukan modifikasi pada file dart widget dengan menambahkan *mainAxisAlignment: MainAxisAlignment.spaceAround* dan *crossAxisAlignment: CrossAxisAlignment.center*, sehingga akan tampil seperti berikut :
+7. Melakukan modifikasi pada file dart widget dengan menambahkan *mainAxisAlignment: MainAxisAlignment.spaceAround* dan *crossAxisAlignment: CrossAxisAlignment.center*, sehingga akan tampil seperti berikut : </br>
     ![image](docs/axisalignt_cross.PNG)
-8. Melakukan modifikasi pada file dart widget dengan merubah *crossAxisAlignment: CrossAxisAlignment.start*, sehingga akan tampil seperti berikut :
+8. Melakukan modifikasi pada file dart widget dengan merubah *crossAxisAlignment: CrossAxisAlignment.start*, sehingga akan tampil seperti berikut : </br>
     ![image](docs/axisalignt_cross_start.PNG)
 
 ### **Flexible Widget**
