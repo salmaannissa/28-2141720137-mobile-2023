@@ -52,7 +52,7 @@ Melakukan pencarian gambar pada internet dan membuat folder images di root proje
 ### **Row and Column Classes**
 1. Membuat folder baru di dalam folder lib dengan nama widget.
 2. Membuat file dart baru di dalam folder widget dengan nama ***row_column.dart***
-3. Menambahkan <a href = ''> kode program </a> pada file ***row_column.dart***
+3. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/row_column.dart'> kode program </a> pada file ***row_column.dart***
 4. Melakukan import serta memanggil function RowColumnWidget di dalam function MyApp yang terletak pada main seperti berikut : </br>
 ![image](docs/tp1_main_row.PNG)
 5. Hasil Run : </br>
@@ -63,7 +63,7 @@ Melakukan pencarian gambar pada internet dan membuat folder images di root proje
 
 ### **Axis Size and Alignment**
 1. Membuat file dart baru di dalam folder widget dengan nama ***main_axis.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***main_axis.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/main_axis.dart'> kode program </a> pada file ***main_axis.dart***
 3. Melakukan import serta memanggil function MainAxis di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br>
     Baik menggunakan mainAxisSize.max atau mainAxisSize.min tampilan UI tidak terdapat perubahan. </br>
@@ -79,53 +79,47 @@ Melakukan pencarian gambar pada internet dan membuat folder images di root proje
 
 ### **Flexible Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***flexibel.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***flexibel.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/flexibel.dart'> kode program </a> pada file ***flexibel.dart***
 3. Melakukan import serta memanggil function FlexibleWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/flexible_loose.PNG)
 5. Melakukan modifikasi sehingga akan menampilkan UI seperti berikut : </br> ![image](docs/flexible_tight.PNG)
 
 ### **Expanded Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***expanded.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***expanded.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/expanded.dart'> kode program </a> pada file ***expanded.dart***
 3. Melakukan import serta memanggil function ExpandedWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/expanded_modif.PNG)
 
 ### **SizedBox Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***sized_box.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***sized_box.dart***
-3. Melakukan import serta memanggil function SizedBoxWidget di dalam function MyApp yang terletak pada main.
-4. Hasil Run : </br> ![image](docs/sizedbox_modif.PNG)
-
-### **SizedBox Widget**
-1. Membuat file dart baru di dalam folder widget dengan nama ***sized_box.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***sized_box.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/sized_box.dart'> kode program </a> pada file ***sized_box.dart***
 3. Melakukan import serta memanggil function SizedBoxWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/sizedbox_modif.PNG)
 
 ### **Spacer Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***spacer.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***spacer.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/spacer.dart'> kode program </a> pada file ***spacer.dart***
 3. Melakukan import serta memanggil function SpacerWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/spacer_modif.PNG)
 
 ### **Text Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***text.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***text.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/text.dart'> kode program </a> pada file ***text.dart***
 3. Melakukan import serta memanggil function TextWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/text_modif.PNG)
 
 ### **Icon Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***icon.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***icon.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/icon.dart'> kode program </a> pada file ***icon.dart***
 3. Melakukan import serta memanggil function IconWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/icon_modif.PNG)
 
 ### **Image Widget**
 1. Membuat file dart baru di dalam folder widget dengan nama ***image.dart***
-2. Menambahkan <a href = ''> kode program </a> pada file ***image.dart***
+2. Menambahkan <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/image.dart'> kode program </a> pada file ***image.dart***
 3. Melakukan import serta memanggil function ImageWidget di dalam function MyApp yang terletak pada main.
 4. Hasil Run : </br> ![image](docs/img_modif.PNG)
 
 ### **Put it All Together**
-- <a href = ''> Kode Program </a>
-- Hasil Run : ![image](docs/put_all_together.PNG)
+- <a href = 'https://github.com/salmaannissa/28-2141720137-mobile-2023/blob/main/week-07/src/basic_layout_flutter/lib/widget/put_together.dart'> Kode Program </a>
+- Hasil Run : </br> ![image](docs/put_all_together.PNG)
