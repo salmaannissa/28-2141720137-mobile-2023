@@ -3,4 +3,5 @@
 **Tampilan Hasil Praktikum** </br>
 ![img](docs/praktikum.gif) </br>
 
-**Tampulan Tugas**
+**Tampilan Tugas**
+![img](docs/tugas.gif) </br>
