@@ -4,7 +4,7 @@
 #### **PRAKTIKUM**
 - Menambahkan plugin</br>
     ![img](docs/P01_02.PNG) </br>
-- Hasil Praktikum : </br
+- Hasil Praktikum : </br>
     ![img](docs/P01_RESULT.PNG)
 
 #### **TUGAS PRAKTIKUM**
