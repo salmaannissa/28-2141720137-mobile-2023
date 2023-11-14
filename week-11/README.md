@@ -31,3 +31,13 @@ Jawab : </br>
     - Hasil Run : </br>
         ![img](docs/PR-02-HASIL.gif)
     - Penjelasan : Pada praktikum ini berhasil dibuat sebuah tampilan task list dengan perhitungan berapa banyak tugas yang harus dilakukan dan berpa banyak tugas yang sudah selesai dilakukan.
+
+### **Tugas Praktikum 3: State di Multiple Screens**
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini! </br>\
+    ![img](docs/diagram.PNG)
+    - Jawab : Sebelum dilakukan perubahan kode program. Hanya ada satu layar yang dapat ditampilkan oleh aplikasi. Dengan sebuah PlanProvider yang mengakses PlanCreatorScreen. PlanCreatorScreen sendiri memiliki sebuah kolom dan textField yang nantinya akan menampilkan ListView. Sedangkan pada praktikum ketiga ditambahkan sebuah layar baru yang akan mengelompokkan tugas berdasarkan jenisnya. Jadi satu jenis tugas nantinya akan tampil di dalam PlanScreen dan untuk detail tugas akan tampil setelah PlanScreen tersebut diklik.
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+    - Hasil Run : </br>
+        ![img](docs/PR-03-HASIL.gif)
+    - Penjelasan : Pada praktikum ini berhasil dibuat sebuah tampilan task list dengan perhitungan berapa banyak tugas yang harus dilakukan dan berpa banyak tugas yang sudah selesai dilakukan.
