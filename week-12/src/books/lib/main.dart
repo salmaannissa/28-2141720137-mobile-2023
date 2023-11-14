@@ -34,6 +34,13 @@ class FuturePage extends StatefulWidget {
 class _FuturePageState extends State<FuturePage> {
   String result = '';
 
+  Future<Response> getData() async {
+    const authority = 'www.googleapis.com';
+    const path = '/books/v1/volumes/tZldEAAAQBAJ'; //SOAL 2
+    Uri url = Uri.https(authority, path);
+    return http.get(url);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +52,17 @@ class _FuturePageState extends State<FuturePage> {
           children: [
             const Spacer(),
             ElevatedButton(
-              onPressed: (){}, 
+              onPressed: (){
+                setState(() {});
+                getData()
+                .then((value) {
+                  result = value.body.toString().substring(0, 450);
+                  setState(() {});
+                }).catchError((_){
+                  result = 'An error occurred';
+                  setState(() {});
+                });
+              }, 
               child: const Text('GO!')
             ),
             const Spacer(),
