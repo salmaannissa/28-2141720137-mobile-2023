@@ -16,4 +16,18 @@ Jawab : </br>
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat! </br>
 Jawab : </br>
     - Hasil Run </br>
-        ![img](docs/PR-01-09.gif)
+        ![img](docs/PR-01-09.gif) </br>
+    - Penjelasan : Pada praktikum ini berhasil dibuat sebuah tampilan task list dengan menerapkan sebuah check box.
+
+### **Tugas Praktikum 2: InheritedWidget**
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+    - Jawab : </br>
+        Inherited Widget pada langkah satu menyediakan cara efisien untuk mem-pass dan memantau data melalui pohon widget tanpa perlu melewati parameter ke setiap widget secara manual. Dalam kasus ini Inherited Notifier menyediakan cara yang efisien untuk memantau dan memberi tahu perubahan nilai saat ValueNotifier berubah dan melakukan rebuild.
+3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+    - Jawab : </br>
+        Maksud dari method di langkah 3 adalah memberikan kode program agar program mencetak nilai berapa tugas yang harus dilakukan dan jumlah tugas yang sudah selesai dilakukan berdasarkan checkbox.
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat! </br>
+    - Hasil Run : </br>
+        ![img](docs/PR-02-HASIL.gif)
+    - Penjelasan : Pada praktikum ini berhasil dibuat sebuah tampilan task list dengan perhitungan berapa banyak tugas yang harus dilakukan dan berpa banyak tugas yang sudah selesai dilakukan.
