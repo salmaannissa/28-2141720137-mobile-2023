@@ -84,12 +84,20 @@ class _FuturePageState extends State<FuturePage> {
   }
   // SOAL 7
   void returnFG() {
-    FutureGroup<int> futureGroup = FutureGroup<int>();
-    futureGroup.add(returnOneAsync());
-    futureGroup.add(returnTwoAsync());
-    futureGroup.add(returnThreeAsync());
-    futureGroup.close();
-    futureGroup.future.then((List<int>value) {
+    // FutureGroup<int> futureGroup = FutureGroup<int>();
+    // futureGroup.add(returnOneAsync());
+    // futureGroup.add(returnTwoAsync());
+    // futureGroup.add(returnThreeAsync());
+    // futureGroup.close();
+    // SOAL 8
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+    // futureGroup.future.then((List<int>value) { // SOAL 7
+    // SOAL 8
+    futures.then((List<int> value) {
       int total = 0;
       for (var element in value) {
         total += element;
