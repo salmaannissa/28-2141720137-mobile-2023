@@ -40,4 +40,10 @@
 8. Jelaskan maksud perbedaan kode langkah 1 dan 4! </br>
     **Jawab** : </br> 
     - Pada langkah satu sampai empat dilakukan pemanggilan future yang bekerja secara paralel. Artinya bahwa dalam satu waktu sebuah program akan mengeksekusi beberapa future sekaligus yang dapat mengurangi waktu yang diperlukan untuk eksekusi supaya lebih efisien. Sebuah class FutureGroup mampu menampung banyak future dan mengeksekusinya disaat yang bersamaan. Selain itu Future.wait juga dapat dimanfaatkan untuk melakukan eksekusi future dalam satu waktu yang sama. </br>
-    - Perbedaan yang signifikan terjadi pada saat menampilkan hasil. Pemanggilan ketiga function yang digunakan pada praktikum kedua mulanya membutuhkan waktu 9s untuk tampil. Namun, saat ketiga function dimasukkan ke dalam FutureGroup waktu yang diperlukan untuk menampilkan hasil hanya 3s.
+    - Perbedaan yang signifikan terjadi pada saat menampilkan hasil. Pemanggilan ketiga function yang digunakan pada praktikum kedua mulanya membutuhkan waktu 9s untuk tampil. Namun, saat ketiga function dimasukkan ke dalam FutureGroup waktu yang diperlukan untuk menampilkan hasil hanya 3s. </br>
+
+9. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9". </br>
+    **Jawab** : </br>
+    - Hasil Run Code : </br> ![img](docs/P05-09-Hasil.gif) </br>
+    - Debug Console : </br> ![img](docs/P05-09-Hasil-DebugConsole.PNG) </br>
+

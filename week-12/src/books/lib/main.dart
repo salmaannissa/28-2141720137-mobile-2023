@@ -107,6 +107,11 @@ class _FuturePageState extends State<FuturePage> {
       });
     });
   }
+  // SOAL 9
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened!');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -147,7 +152,17 @@ class _FuturePageState extends State<FuturePage> {
                 // }).catchError((e) { // SOAL 6
                 //   result = 'An error occured';
                 // });
-                returnFG(); // SOAL 7
+                // returnFG(); // SOAL 7
+                returnError()
+                  .then((value){
+                    setState(() {
+                      result = 'Success';
+                    });
+                  }).catchError((onError){
+                    setState(() {
+                      result = onError.toString();
+                    });
+                  }).whenComplete(() => print('Complete'));
               },
               child: const Text('GO!'),
             ),
