@@ -63,8 +63,17 @@ class _FuturePageState extends State<FuturePage> {
     return completer.future;
   }
   Future calculate() async{
-    await Future.delayed(const Duration(seconds : 5));
-    completer.complete(42);
+    // await Future.delayed(const Duration(seconds : 5));
+    // completer.complete(42);
+    // SOAL 6
+    try {
+      await new Future.delayed(const Duration(seconds : 5));
+      completer.complete(42);
+      // throw Exception();
+    }
+    catch(_) {
+      completer.completeError({});
+    }
   }
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
@@ -109,6 +118,8 @@ class _FuturePageState extends State<FuturePage> {
                   setState(() {
                     result = value.toString();
                   });
+                }).catchError((e) { // SOAL 6
+                  result = 'An error occured';
                 });
               },
               child: const Text('GO!'),

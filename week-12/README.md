@@ -27,3 +27,8 @@
     - Function calculate merupakan Future asinkron yang akan menunda eksekusi selama 5 detik menggunakan future.delayed
     - Setelah penundaan selesai makan akan muncul angka 42 pada tampilan karena function getNumber() memanggil calculate.
     - Hasil : </br> ![img](docs/P03-05-Hasil.gif) </br>
+
+6. Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut! Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6". </br>
+    **Jawab** : </br>
+    - Perbedaan pada kedua kode program terletak pada try and catch nya. Pada kode program kedua ini ditambahkan aksi untuk menangani error dan mengembalikan sebuah hasil 'An error occurred' apabila program mengalami error.
+    - Hasil dari kode program masih sama dengan sebelumnya karena dalam kode program tidak ditemukan error : </br> ![img](docs/P03-06-Hasil.gif) </br>
