@@ -55,7 +55,17 @@ class _FuturePageState extends State<FuturePage> {
       result = total.toString();
     });
   }
-  //
+  //SOAL 5
+  late Completer completer;
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+  Future calculate() async{
+    await Future.delayed(const Duration(seconds : 5));
+    completer.complete(42);
+  }
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
     const path = '/books/v1/volumes/tZldEAAAQBAJ'; //SOAL 2
@@ -88,7 +98,21 @@ class _FuturePageState extends State<FuturePage> {
             //   child: const Text('GO!')
             // ),
             // SOAL 4
-            ElevatedButton(onPressed: (){count();}, child: const Text('GO!')),
+            // ElevatedButton(
+            //   onPressed: (){count();}, 
+            //   child: const Text('GO!')
+            // ),
+            // SOAL 5
+            ElevatedButton(
+              onPressed: () {
+                getNumber().then((value) {
+                  setState(() {
+                    result = value.toString();
+                  });
+                });
+              },
+              child: const Text('GO!'),
+            ),
             const Spacer(),
             Text(result),
             const Spacer(),
