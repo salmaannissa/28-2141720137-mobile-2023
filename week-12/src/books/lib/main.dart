@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:async/async.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
@@ -81,6 +82,23 @@ class _FuturePageState extends State<FuturePage> {
     Uri url = Uri.https(authority, path);
     return http.get(url);
   }
+  // SOAL 7
+  void returnFG() {
+    FutureGroup<int> futureGroup = FutureGroup<int>();
+    futureGroup.add(returnOneAsync());
+    futureGroup.add(returnTwoAsync());
+    futureGroup.add(returnThreeAsync());
+    futureGroup.close();
+    futureGroup.future.then((List<int>value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -114,13 +132,14 @@ class _FuturePageState extends State<FuturePage> {
             // SOAL 5
             ElevatedButton(
               onPressed: () {
-                getNumber().then((value) {
-                  setState(() {
-                    result = value.toString();
-                  });
-                }).catchError((e) { // SOAL 6
-                  result = 'An error occured';
-                });
+                // getNumber().then((value) {
+                //   setState(() {
+                //     result = value.toString();
+                //   });
+                // }).catchError((e) { // SOAL 6
+                //   result = 'An error occured';
+                // });
+                returnFG(); // SOAL 7
               },
               child: const Text('GO!'),
             ),

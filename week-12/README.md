@@ -32,3 +32,7 @@
     **Jawab** : </br>
     - Perbedaan pada kedua kode program terletak pada try and catch nya. Pada kode program kedua ini ditambahkan aksi untuk menangani error dan mengembalikan sebuah hasil 'An error occurred' apabila program mengalami error.
     - Hasil dari kode program masih sama dengan sebelumnya karena dalam kode program tidak ditemukan error : </br> ![img](docs/P03-06-Hasil.gif) </br>
+
+7. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7". </br>
+    **Jawab** : </br>
+    - Hasil : </br> ![img](docs/P04-07-Hasil.gif) </br>
