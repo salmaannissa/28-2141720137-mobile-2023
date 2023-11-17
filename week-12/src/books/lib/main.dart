@@ -112,7 +112,20 @@ class _FuturePageState extends State<FuturePage> {
     await Future.delayed(const Duration(seconds: 2));
     throw Exception('Something terrible happened!');
   }
-
+  // SOAL 10
+  Future handleError() async {
+    try {
+      await returnError();
+    }
+    catch (error) {
+      setState(() {
+        result = error.toString();
+      });
+    }
+    finally {
+      print('Complete');
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,16 +166,18 @@ class _FuturePageState extends State<FuturePage> {
                 //   result = 'An error occured';
                 // });
                 // returnFG(); // SOAL 7
-                returnError()
-                  .then((value){
-                    setState(() {
-                      result = 'Success';
-                    });
-                  }).catchError((onError){
-                    setState(() {
-                      result = onError.toString();
-                    });
-                  }).whenComplete(() => print('Complete'));
+                // SOAL 9
+                // returnError()
+                //   .then((value){
+                //     setState(() {
+                //       result = 'Success';
+                //     });
+                //   }).catchError((onError){
+                //     setState(() {
+                //       result = onError.toString();
+                //     });
+                //   }).whenComplete(() => print('Complete'));
+                handleError(); // SOAL 10
               },
               child: const Text('GO!'),
             ),

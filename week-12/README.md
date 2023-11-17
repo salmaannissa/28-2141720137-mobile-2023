@@ -47,3 +47,8 @@
     - Hasil Run Code : </br> ![img](docs/P05-09-Hasil.gif) </br>
     - Debug Console : </br> ![img](docs/P05-09-Hasil-DebugConsole.PNG) </br>
 
+10. Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4! </br>
+    **Jawab** : </br>
+    - Hasil yang ditampilkan sama dengan soal nomor 9.
+    - Yang membedakan kedua kode program tersebut adalah penanganan error di langkah pertama dilakukan pada sintaks ElevatedButton. Sedangkan penanganan error pada langkah keempat dilakukan pada function handleError itu sendiri dan ElevatedButton hanya bertugas mengeksekusi program saat tombolnya diklik.
+
