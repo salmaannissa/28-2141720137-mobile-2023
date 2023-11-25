@@ -52,3 +52,45 @@
     - Hasil yang ditampilkan sama dengan soal nomor 9.
     - Yang membedakan kedua kode program tersebut adalah penanganan error di langkah pertama dilakukan pada sintaks ElevatedButton. Sedangkan penanganan error pada langkah keempat dilakukan pada function handleError itu sendiri dan ElevatedButton hanya bertugas mengeksekusi program saat tombolnya diklik.
 
+11. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda. </br>
+    **Jawab** : </br>
+    - Identitas sudah ditambahkan pada title project : </br> ![img](docs/P06-11-Identitas.PNG)
+
+12. **SOAL NO. 12** </br>
+    - Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await *Future.delayed(const Duration(seconds: 3));* </br>
+        **Jawab** : </br> ![img](docs/P06-12-AddAwait.PNG) </br>
+    - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian? </br>
+        **Jawab** : Ya. Karena project flutter mengimport package geolocator yang dapat digunakan untuk mengetahui lokasi terkini. </br>
+    - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 12**". </br>
+        **Jawab** : </br> ![img](docs/P06-12-HasilGeolocation.gif)
+
+13. Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian? Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13". </br>
+    **Jawab** : </br> 
+    - Dalam hal ini tidak ada yang berbeda dalam tampilan UI. Hanya saja dalam penjelasan disebutkan bahwa penggunaan FutureBuilder lebih efisien, clean, dan reactive dikarenakan FutureBuilder memiliki status future sendiri, sehingga dapat mengabaikan penggunaan setState.
+    - Hasil : </br> ![img](docs/P07-13-FutureBuilder.gif) </br>
+
+14. Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian? Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14". </br>
+    **Jawab** : </br>
+    - Tidak ada perbedaan UI dengan langkah sebelumnya dikarenakan kode program tersebut hanya muncul ketika program menangani error, sedangkan pada program yang saat ini dijalankan tidak ada error yang harus ditangani.
+    - Hasil : </br> ![img](docs/P07-13-FutureBuilder.gif) </br>
+
+15. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda. Silakan ganti dengan warna tema favorit Anda. </br>
+    **Jawab** : </br>
+    - Memodifikasi Warna Tema : </br> ![img](docs/P08-15-Colors.PNG) </br>
+    - Memodifikasi Properti Title : </br> ![img](docs/P08-15-Title.PNG) </br>
+ 
+16. **SOAL 16** </br>
+    - Cobalah klik setiap button, apa yang terjadi? Mengapa demikian? </br>
+        **Jawab** : Saat button diklik maka akan terjadi perubahan warna tema. Hal ini disebabkan oleh adanya perubahan variabel warna pada saat button diklik yang merupakan proses dari widget elevated button.
+    - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda! </br>
+        **Jawab** : </br> ![img](docs/P08-16-Colors.PNG) </br>
+    - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16". </br>
+        **Jawab** : </br> ![img](docs/P08-16-Hasil.gif) </br>
+
+17. **SOAL 17** </br>
+    - Cobalah klik setiap button, apa yang terjadi? Mengapa demikian? </br>
+        **Jawab** : Warna background berubah seperti pada praktikum sebelumnya. Namun pada praktikum ini diberikan navigasi ke screen baru sehingga warna akan berubah setelah screen baru itu muncul.
+    - Gantilah 3 warna pada langkah 3 dengan warna favorit Anda! </br>
+        **Jawab** : </br> ![img](docs/P09-17-Colors.PNG) </br>
+    - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17". </br>
+        **Jawab** : </br> ![img](docs/P09-17-Hasil.gif)
