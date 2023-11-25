@@ -14,4 +14,13 @@ class ColorStream {
     Colors.lime.shade300,
     Colors.deepOrange.shade300,
   ];
+
+  // SOAL 3
+  Stream<Color> getColors() async* {
+    yield* Stream.periodic(
+      const Duration(seconds: 1), (int t){
+        int index = t % colors.length;
+        return colors[index];
+      });
+  }
 }
