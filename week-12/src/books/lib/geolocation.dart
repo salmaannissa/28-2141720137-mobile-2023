@@ -43,6 +43,9 @@ class _LocationScreenState extends State<LocationScreen> {
             return const CircularProgressIndicator();
           }
           else if (snapshot.connectionState == ConnectionState.done) {
+            if (snapshot.hasError) {
+              return const Text('Something terrible happened!'); // SOAL 14
+            }
             return Text(snapshot.data.toString());
           }
           else {
