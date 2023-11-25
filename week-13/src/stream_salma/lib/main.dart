@@ -39,12 +39,18 @@ class _StreamHomePageState extends State<StreamHomePage> {
   Color bgColor = Colors.blueGrey;
   late ColorStream colorStream;
   void changeColor() async {
-  await for (var eventColor in colorStream.getColors()) {
-    setState(() {
-      bgColor = eventColor;
+    // SOAL 4
+    // await for (var eventColor in colorStream.getColors()) {
+    // setState(() {
+    //   bgColor = eventColor;
+    // });
+    // SOAL 5
+    colorStream.getColors().listen((eventColor){
+      setState(() {
+        bgColor = eventColor;
+      });
     });
   }
-}
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
