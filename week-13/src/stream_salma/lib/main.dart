@@ -38,13 +38,21 @@ class _StreamHomePageState extends State<StreamHomePage> {
   late NumberStream numberStream;
   late StreamTransformer transformer; // P03
   late StreamSubscription subscription; // P04
+  late StreamSubscription subscription2; // P05
+  String values = '';
   void initState(){
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
     Stream stream = numberStreamController.stream;
     subscription = stream.listen((event){ // P04
       setState(() {
-        lastNumber = event;
+        // lastNumber = event;
+        values += '$event - ';
+      });
+    });
+    subscription2 = stream.listen((event){
+      setState(() {
+        values += '$event - ';
       });
     });
     subscription.onError((error){
