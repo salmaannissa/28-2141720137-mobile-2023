@@ -37,41 +37,68 @@ class _StreamHomePageState extends State<StreamHomePage> {
   late StreamController numberStreamController;
   late NumberStream numberStream;
   late StreamTransformer transformer; // P03
+  late StreamSubscription subscription; // P04
   void initState(){
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
     Stream stream = numberStreamController.stream;
-    transformer = StreamTransformer<int, int>.fromHandlers( // P03
-      handleData:(value, sink) {
-        sink.add(value * 10);
-      },
-      handleError: (error, trace, sink){
-        sink.add(-1);
-      },
-      handleDone: (sink) => sink.close()
-    );
-    stream.transform(transformer).listen((event) { // P03
+    subscription = stream.listen((event){ // P04
       setState(() {
         lastNumber = event;
       });
-    }).onError((error){ // SOAL 7
-      setState((){
+    });
+    subscription.onError((error){
+      setState(() {
         lastNumber = -1;
       });
     });
+    subscription.onDone((){
+      setState(() {
+        print('onDone was called');
+      });
+    });
+    // transformer = StreamTransformer<int, int>.fromHandlers( // P03
+    //   handleData:(value, sink) {
+    //     sink.add(value * 10);
+    //   },
+    //   handleError: (error, trace, sink){
+    //     sink.add(-1);
+    //   },
+    //   handleDone: (sink) => sink.close()
+    // );
+    // stream.transform(transformer).listen((event) { // P03
+    //   setState(() {
+    //     lastNumber = event;
+    //   });
+    // }).onError((error){ // SOAL 7
+    //   setState((){
+    //     lastNumber = -1;
+    //   });
+    // });
     super.initState();
     // colorStream = ColorStream();
     // changeColor();
   }
-  void dispose() {
+  void stopStream(){ // P04
     numberStreamController.close();
-    super.dispose();
+  }
+  void dispose() {
+    // numberStreamController.close();
+    // super.dispose();
+    subscription.cancel(); // P04
   }
   void addRandomNumber() {
     Random random = Random();
     // SOAL 6
     int myNum = random.nextInt(10);
-    numberStream.addNumberToSink(myNum);
+    // P04
+    if (!numberStreamController.isClosed){
+      numberStream.addNumberToSink(myNum);
+    } else {
+      setState(() {
+        lastNumber = -1;
+      });
+    }
     // numberStream.addError(); // SOAL 7
   }
   Color bgColor = Colors.blueGrey;
@@ -105,8 +132,14 @@ class _StreamHomePageState extends State<StreamHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(lastNumber.toString()),
-            ElevatedButton(onPressed: ()=>addRandomNumber(), 
-            child: const Text('New Random Number'))
+            ElevatedButton(
+              onPressed: ()=>addRandomNumber(), 
+              child: const Text('New Random Number')
+            ),
+            ElevatedButton(
+              onPressed: () => stopStream(), // P04
+              child: const Text('Stop Subscription'),
+            )
           ],
         )
       ),
