@@ -36,11 +36,21 @@ class _StreamHomePageState extends State<StreamHomePage> {
   int lastNumber = 0;
   late StreamController numberStreamController;
   late NumberStream numberStream;
+  late StreamTransformer transformer; // P03
   void initState(){
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
     Stream stream = numberStreamController.stream;
-    stream.listen((event) {
+    transformer = StreamTransformer<int, int>.fromHandlers( // P03
+      handleData:(value, sink) {
+        sink.add(value * 10);
+      },
+      handleError: (error, trace, sink){
+        sink.add(-1);
+      },
+      handleDone: (sink) => sink.close()
+    );
+    stream.transform(transformer).listen((event) { // P03
       setState(() {
         lastNumber = event;
       });
@@ -60,9 +70,9 @@ class _StreamHomePageState extends State<StreamHomePage> {
   void addRandomNumber() {
     Random random = Random();
     // SOAL 6
-    // int myNum = random.nextInt(10);
-    // numberStream.addNumberToSink(myNum);
-    numberStream.addError(); // SOAL 7
+    int myNum = random.nextInt(10);
+    numberStream.addNumberToSink(myNum);
+    // numberStream.addError(); // SOAL 7
   }
   Color bgColor = Colors.blueGrey;
   late ColorStream colorStream;
@@ -82,7 +92,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Stream || Salma Annissa'),
+        title: const Text('Stream | Salma Annissa'),
         backgroundColor: Colors.red.shade200,
       ),
       // body: Container(
