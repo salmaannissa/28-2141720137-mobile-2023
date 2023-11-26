@@ -9,6 +9,10 @@ class NumberStream{
   close(){
     controller.close();
   }
+  // SOAL 7
+  addError(){
+    controller.sink.addError('Error');
+  }
 }
 class ColorStream {
   final List<Color> colors = [
